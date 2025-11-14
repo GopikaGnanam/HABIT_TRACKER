@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="habit.css">
+</head>
+<body>
+  <div class="head">
+    <header>
+      <h1>Daily Task</h1>
+      <div class="small">Today work: <strong>Stored here..!</strong></div>
+    </header>
+
+    <div class="card">
+      <div class="row">
+        <input id="newHabitName" placeholder="Add a habit">
+        <button id="add" class="add">Add</button>
+        <button id="reset" class="reset">Reset All</button>
+        </div>
+
+
+      <div id="habits"></div>
+
+      <footer>
+        <div class="note"><strong>Note:</strong> Tap the checkbox to mark after completing the today's task.</div>
+        <div class="date">Today: <span id="todayLabel"></span></div>
+      </footer>
+    </div>
+  </div>
+        <script src="habit.js" defer></script>
+
+</body>
+</html>
