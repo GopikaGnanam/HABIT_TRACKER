@@ -44,8 +44,8 @@ app.put("/update/:id", (req, res) => {
     const id = req.params.id;
     const { status } = req.body;
 
-    const sql = "UPDATE habits SET status = ? WHERE id = ?";
-    db.query(sql, [status, id], (err, result) => {
+    const sql = "UPDATE habit SET status = ? WHERE id = ?";
+    con.query(sql, [status, id], (err, result) => {
     if (err){
         console.error("DB Error:", err);
         return res.status(500).json({ error: err });
@@ -77,4 +77,5 @@ console.log(__dirname);
 app.listen(5000, () => {
     console.log("Server running on http://localhost:5000");
 });
+
 
