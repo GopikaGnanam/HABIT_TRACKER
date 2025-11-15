@@ -69,7 +69,7 @@ app.delete("/delete/:id", (req, res) => {
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'habit.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 console.log(__dirname);
 
@@ -77,5 +77,6 @@ console.log(__dirname);
 app.listen(5000, () => {
     console.log("Server running on http://localhost:5000");
 });
+
 
 
